@@ -32,3 +32,43 @@ closeMenu.addEventListener(
         document.body.classList.remove('body-class');
     }
 )
+
+// available items slider 
+const slideLeft = document.querySelector('.items-left');
+const slideRight = document.querySelector('.items-right');
+const menuBox = document.querySelectorAll('.available-items-img');
+const sliderBox = document.querySelector('.available-slider-img');
+
+let count = 0;
+slideRight.addEventListener(
+    'click',
+    () => {
+        menuBox.forEach(
+            (img, imgIndex) => {
+                if (imgIndex == 3) return;
+                if (imgIndex == count) {
+                    imgIndex++;
+                    sliderBox.innerHTML = menuBox[imgIndex].innerHTML;
+                    console.log(imgIndex);
+                }
+            })
+        count++;
+    }
+)
+
+// left slide
+slideLeft.addEventListener(
+    'click',
+    () => {
+        menuBox.forEach(
+            (img, imgIndex) => {
+                if (imgIndex == 0) return;
+                if (imgIndex == count) {
+                    imgIndex--;
+                    sliderBox.innerHTML = menuBox[imgIndex].innerHTML;
+                    console.log(imgIndex);
+                }
+            })
+        count--;
+    }
+)
