@@ -110,7 +110,7 @@ nav ul li a {
 }
 
 .banner-img .check-menu,
-.bake-content .check-menu {
+.bake-content .check-menu, .available-items .check-menu {
     text-transform: uppercase;
     padding: 10px 30px;
     z-index: 2;
@@ -181,12 +181,50 @@ nav ul li a {
     padding: 120px 0px;
 }
 
-
-
-.available-items-img {
-    border-radius: 50%;
-    overflow: hidden;
-    height: 180px;
-    width: 180px;
+.available-items h1 {
+    color: #222;
+    font-size: 2.25rem;
+    font-weight: 550;
 }
 
+.available-items p {
+    font-weight: 400;
+    color: #777;
+    font-size: 0.9rem;
+    padding-bottom: 80px;
+}
+
+.available-items-container {
+    display: flex;
+    gap: 50px;
+}
+
+.available-items-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.available-items-img img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.available-items-img h4 {
+    color: #222;
+    font-size: 1.13rem;
+    padding: 20px 0px;
+}
+
+.available-items-img p {
+    color: #777;
+    padding: 0px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.available-items .check-menu {
+    margin-top: 80px;
+}
