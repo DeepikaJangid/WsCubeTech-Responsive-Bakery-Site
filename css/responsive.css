@@ -1,0 +1,90 @@
+@media (min-width: 0px) and (max-width: 768px) {
+    .nav {
+        padding: 8px;
+    }
+
+    .menu {
+        position: fixed;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 90px);
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: all 500ms ease-in-out;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    #hamburger,
+    #close-menu {
+        position: absolute;
+        right: 5%;
+        top: 35%;
+        opacity: 1;
+        visibility: visible;
+        font-size: 24px;
+        transition: all 200ms ease-in;
+    }
+
+    #close-menu {
+        transform: rotate(0deg);
+        transition: all 500ms ease-in;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .body-class {
+        overflow: hidden !important;
+    }
+
+    /* header ends */
+
+    .banner-img, .overlay {
+        transition: all 500ms ease-in-out;
+    }
+
+    /* hero content */
+
+    .hero-content {
+        padding-bottom: 5px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        padding: 10px 0px;
+        margin: 10px 0px;
+    }
+
+    /* bake content */
+
+    .bake-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    .bake-content h1 {
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+    }
+
+    .bake-content p:nth-child(4) {
+        margin-bottom: 8px;
+    }
+
+
+
+}
