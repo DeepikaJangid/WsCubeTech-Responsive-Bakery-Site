@@ -109,9 +109,8 @@ nav ul li a {
     line-height: 5.65rem;
 }
 
-.banner-img .check-menu,
-.bake-content-left .check-menu,
-.available-items .check-menu {
+.check-menu,
+.video-check-menu {
     text-transform: uppercase;
     padding: 10px 30px;
     z-index: 2;
@@ -121,33 +120,41 @@ nav ul li a {
     transition: all 300ms ease;
     cursor: pointer;
     font-weight: 500;
+    border: 1px solid transparent;
 }
 
-.banner-img .check-menu:hover,
-.bake-content .check-menu:hover {
+.banner-img .check-menu:hover {
     background: transparent;
     border: 1px solid white;
+    color: #fff;
 }
 
 /* bake-content section */
 
-.bake-content {
+.bake-content,
+.video-section {
+    max-width: 1400px;
+    margin: auto;
     display: flex;
-    padding: 7.5rem 0px 7.5rem 8rem;
+    padding: 7.5rem 0px 7.5rem 6rem;
+    justify-content: space-between;
 }
 
-.bake-content-left {
+.bake-content-left,
+.video-content-left {
     max-width: 800px;
     padding-left: 20px;
 }
 
-.bake-content-left p:first-child {
+.bake-content-left p:first-child,
+.video-content-left p:first-child {
     text-transform: uppercase;
     color: #d1ab7f;
     font-size: 0.9rem;
 }
 
-.bake-content-left h1 {
+.bake-content-left h1,
+.video-content-left h1 {
     font-size: 2.25rem;
     max-width: 900px;
     padding: 20px 0px;
@@ -155,20 +162,24 @@ nav ul li a {
 }
 
 .bake-content-left p:nth-child(3),
-.bake-content-left p:nth-child(4) {
+.bake-content-left p:nth-child(4),
+.video-content-left P:nth-child(3),
+.video-content-left p:nth-child(4) {
     margin-bottom: 1rem;
     font-size: 0.9rem;
 }
 
-.bake-content-left p:nth-child(4) {
+.bake-content-left p:nth-child(4),
+.video-content-left p:nth-child(4) {
     color: #777;
 }
 
-.bake-content-left .check-menu {
+.bake-content-left .check-menu,
+.video-content-left .check-menu {
     margin-top: 1rem;
 }
 
-.bake-content-left .check-menu:hover {
+.check-menu:hover {
     background: white;
     border: 1px solid #d1ab7f;
     color: #d1ab7f;
@@ -209,7 +220,8 @@ nav ul li a {
     gap: 50px;
 }
 
-.available-items-img, .available-slider-img {
+.available-items-img,
+.available-slider-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,19 +229,22 @@ nav ul li a {
     max-width: 250px;
 }
 
-.available-items-img img, .available-slider-img img {
+.available-items-img img,
+.available-slider-img img {
     height: 180px;
     width: 180px;
     border-radius: 50%;
 }
 
-.available-items-img h4, .available-slider-img h4 {
+.available-items-img h4,
+.available-slider-img h4 {
     color: #222;
     font-size: 1.13rem;
     padding: 20px 0px;
 }
 
-.available-items-img p, .available-slider-img p {
+.available-items-img p,
+.available-slider-img p {
     color: #777;
     padding: 0px;
     font-weight: 300;
@@ -242,4 +257,79 @@ nav ul li a {
 
 .available-items-slider {
     display: none;
+}
+
+/* video section */
+
+.video-content-left h1 {
+    max-width: 400px;
+}
+
+.video-content-left p:nth-child(4) {
+    max-width: 550px;
+}
+
+.video-content-left .check-menu,
+.video-check-menu {
+    background-color: #000;
+}
+
+.video-check-menu:hover, .video-check-menu:active {
+    background-color: white;
+    border: 1px solid #d1ab7f !important;
+    color: #d1ab7f;
+}
+
+
+.video-check-menu {
+    margin-top: 30px;
+    display: none;
+}
+
+.video-content-left .check-menu:hover {
+    background-color: #fff;
+}
+
+.video-content-right {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 50px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.video-content-right video {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+#playBtn,
+#pauseBtn {
+    font-size: 3rem;
+    color: #fff;
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+#playBtn:hover,
+#pauseBtn:hover {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255);
+}
+
+#playBtn:active,
+#pauseBtn:active {
+    color: #e9e6e6;
+}
+
+#pauseBtn {
+    opacity: 0;
+    visibility: hidden;
 }

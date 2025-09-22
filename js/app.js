@@ -45,11 +45,14 @@ slideRight.addEventListener(
     () => {
         menuBox.forEach(
             (img, imgIndex) => {
-                if (imgIndex == 3) return;
+                if (imgIndex == 3) {
+                    slideRight.disabled = true;
+                    slideLeft.disabled = false;
+                }
+
                 if (imgIndex == count) {
                     imgIndex++;
                     sliderBox.innerHTML = menuBox[imgIndex].innerHTML;
-                    console.log(imgIndex);
                 }
             })
         count++;
@@ -62,13 +65,70 @@ slideLeft.addEventListener(
     () => {
         menuBox.forEach(
             (img, imgIndex) => {
-                if (imgIndex == 0) return;
+                if (imgIndex == 0) {
+                    slideLeft.disabled = true;
+                    slideRight.disabled = false;
+                }
                 if (imgIndex == count) {
                     imgIndex--;
                     sliderBox.innerHTML = menuBox[imgIndex].innerHTML;
-                    console.log(imgIndex);
                 }
             })
         count--;
     }
 )
+
+// video play on click 
+
+const playBtn = document.querySelector('#playBtn');
+const pauseBtn = document.querySelector('#pauseBtn');
+const videoBox = document.querySelector('#videoBox');
+console.log(pauseBtn);
+
+playBtn.addEventListener(
+    'click',
+    () => {
+        videoBox.play();
+        playBtn.style.opacity = '0';
+        playBtn.style.visibility = 'hidden';
+    }
+)
+
+videoBox.addEventListener(
+    'click',
+    () => {
+        if (videoBox.paused) {
+            videoBox.play();
+            setTimeout(
+                () => {
+                    playBtn.style.opacity = '0';
+                    playBtn.style.visibility = 'hidden';
+                    pauseBtn.style.opacity = '0';
+                    pauseBtn.style.visibility = 'hidden';
+                },
+                200
+            )
+        }
+
+        else {
+            videoBox.pause();
+            setTimeout(
+                () => {
+                    pauseBtn.style.opacity = '1';
+                    pauseBtn.style.visibility = 'visible';
+                },
+                200
+            )
+        }
+    }
+)
+
+pauseBtn.addEventListener(
+    'click',
+    () => {
+        videoBox.play()
+        pauseBtn.style.opacity = '0';
+        pauseBtn.style.visibility = 'hidden';
+    }
+)
+
