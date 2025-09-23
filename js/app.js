@@ -83,7 +83,6 @@ slideLeft.addEventListener(
 const playBtn = document.querySelector('#playBtn');
 const pauseBtn = document.querySelector('#pauseBtn');
 const videoBox = document.querySelector('#videoBox');
-console.log(pauseBtn);
 
 playBtn.addEventListener(
     'click',
