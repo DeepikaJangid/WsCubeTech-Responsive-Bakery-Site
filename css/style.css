@@ -197,13 +197,15 @@ nav ul li a {
     padding: 120px 0px;
 }
 
-.available-items h1 {
+.available-items h1,
+.blog-container h1 {
     color: #222;
     font-size: 2.25rem;
     font-weight: 550;
 }
 
-.available-items p {
+.available-items p,
+.blog-container p {
     font-weight: 400;
     color: #777;
     font-size: 0.9rem;
@@ -410,4 +412,195 @@ nav ul li a {
 .review-stars i:nth-child(4),
 .review-stars i:nth-child(5) {
     color: white;
+}
+
+/* blog section */
+
+.blog-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 0px;
+}
+
+.blog-container h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.blog-container p {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.blog-post-outer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog-post-container {
+    max-width: 360px;
+}
+
+.blog-post-container:hover {
+    cursor: pointer;
+}
+
+.blog-post-container:hover .blog-content h4 a {
+    color: #d1ab7f;
+}
+
+.blog-img {
+    overflow: hidden;
+}
+
+.blog-img img,
+.anchor {
+    transition: 500ms ease-in-out;
+}
+
+.blog-post-container:hover .blog-img img {
+    transform: scale(1.1);
+}
+
+.blog-post-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #77777736;
+    padding: 10px 0px;
+}
+
+.author-info {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: #222;
+    gap: 15px;
+}
+
+.author-info img {
+    height: 30px;
+    width: 30px;
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.blog-content h4>a {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #222;
+    margin: 30px 0px 10px;
+    display: block;
+}
+
+.blog-content p {
+    text-align: start;
+    /* margin-top: 10px; */
+    padding: 0;
+}
+
+.blog-date span {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+/* footer starts */
+
+footer {
+    width: 100%;
+    background-color: #04091E;
+    color: #fff;
+}
+
+.inner-footer {
+    max-width: 1400px;
+    margin: auto;
+    padding: 100px 0px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer-about {
+    max-width: 445px;
+}
+
+.footer-about h4,
+.footer-socials h4,
+.newsletter h4 {
+    font-size: 1.13rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer-about p,
+.footer-socials p,
+.newsletter p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ddd;
+}
+
+.newsletter p,
+.footer-socials p {
+    margin-bottom: 16px;
+}
+
+input[type=email] {
+    padding: 9px 18px;
+    width: 356px;
+    border: none;
+    outline: 0;
+}
+
+.newsletter button {
+    background-color: #d1ab7f;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter button i {
+    cursor: pointer;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a i {
+    color: #fff;
+    transition: 300ms ease-in-out;
+    color: #ddd;
+}
+
+.social-icons a i:hover {
+    color: #d1ab7f;
+}
+
+.footer-last {
+    margin: 20px 0px 16px 165px;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.footer-last i, .footer-last span {
+    color: #d1ab7f;
 }
