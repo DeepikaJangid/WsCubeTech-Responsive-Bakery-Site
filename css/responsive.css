@@ -191,5 +191,7 @@
     }
 
     /* review section */
-
+    .blog-container {
+        width: 100%;
+    }
 }
