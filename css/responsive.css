@@ -1,5 +1,12 @@
 @media (min-width: 0px) and (max-width: 768px) {
-    .nav {
+
+    h1 {
+        font-size: 2.1rem !important;
+        line-height: 45px !important;
+    }
+
+    nav {
+        width: 100%;
         padding: 8px;
     }
 
@@ -22,6 +29,7 @@
 
     nav ul li a {
         color: #fff;
+        font-size: 1rem;
     }
 
     #hamburger,
@@ -96,7 +104,8 @@
 
     /* available items */
 
-    .available-items {
+    .available-items,
+    .review-heading {
         text-align: center;
         padding: 50px 10px;
         overflow: hidden;
@@ -191,7 +200,216 @@
     }
 
     /* review section */
+
+    .reviews {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .review-heading {
+        padding: 0px 0px 25px;
+    }
+
+    .review-content {
+        padding: 0px 15px;
+    }
+
+    /* blog container */
     .blog-container {
         width: 100%;
+        overflow: hidden;
+        padding: 0px 15px;
+    }
+
+    .blog-container h1 {
+        font-size: 2.3rem;
+        margin-top: 30px;
+    }
+
+    .blog-container p {
+        padding: 0px 0px 30px;
+    }
+
+    .blog-post-container:nth-child(1),
+    .blog-post-container:nth-child(3) {
+        display: none;
+    }
+
+    /* footer */
+
+    .inner-footer {
+        padding: 10px 20px;
+    }
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .footer-about {
+        margin: 40px 0px;
+    }
+
+    .newsletter {
+        margin: 0px 0px 30px;
+    }
+
+
+    .footer-last {
+        margin: 40px 0px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    h1 {
+        font-size: 2rem !important;
+        line-height: 45px !important;
+    }
+
+    nav {
+        width: 100%;
+        padding: 5px 18px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    /* header ends */
+
+    /* hero content */
+
+    .hero-content h1 {
+        padding: 15px 0px;
+        margin: 10px 0px;
+    }
+
+    /* bake content */
+
+    .bake-content-right {
+        display: none;
+    }
+
+    /* available items */
+
+    .available-items {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .available-items p,
+    .blog-container p {
+        padding: 10px 0px 25px;
+    }
+
+    .available-items .check-menu {
+        margin: 5px 40px;
+    }
+
+    .available-items-slider {
+        display: none;
+    }
+
+    /* video section */
+
+    .video-section {
+        width: 100%;
+        padding: 20px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* overflow: scroll; */
+    }
+
+    .video-content-left p {
+        display: none;
+    }
+
+    .video-content-left h1 {
+        text-align: center;
+    }
+
+    .video-content-left .check-menu {
+        display: none;
+    }
+
+    .video-check-menu {
+        display: block;
+    }
+
+    .video-content-right {
+        width: 65%;
+        height: 350px !important;
+        margin: 0;
+    }
+
+    /* review section */
+
+    .reviews {
+        width: 100%;
+    }
+
+    .review-heading {
+        padding: 0px 0px 25px;
+    }
+
+    .review-content {
+        padding: 0px 20px;
+    }
+
+    /* blog container */
+    .blog-container {
+        width: 100%;
+        overflow: hidden;
+        padding: 0px 20px;
+    }
+
+    .blog-container h1 {
+        margin-top: 30px;
+    }
+
+    .blog-post-container:nth-child(3) {
+        display: none;
+    }
+
+    .blog-post-container:nth-child(1) {
+        display: block !important;
+    }
+
+    /* footer */
+    .inner-footer {
+        padding: 40px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-about {
+        min-width: 245px;
+    }
+
+    input[type=email] {
+        padding: 9px 18px;
+        min-width: 256px;
+        border: none;
+        outline: 0;
+    }
+
+    .newsletter {
+        margin: 0px 0px 30px;
+    }
+
+
+    .footer-last {
+        margin: 10px 0px;
     }
 }
