@@ -8,6 +8,12 @@
 
 a {
     text-decoration: none;
+    color: #fff;
+    transition: all 400ms ease-in-out;
+}
+
+button:hover a {
+    color: #d4a373;
 }
 
 /* header */
@@ -127,7 +133,7 @@ nav ul li a {
 .banner-img .check-menu:hover {
     background: transparent;
     border: 1px solid white;
-    color: #fff;
+    color: #fff !important;
 }
 
 /* bake-content section */
@@ -177,7 +183,7 @@ nav ul li a {
 
 .bake-content-left .check-menu,
 .video-content-left .check-menu {
-    margin-top: 1rem;
+    margin-top: 1rem ;
 }
 
 .check-menu:hover {
@@ -779,4 +785,120 @@ input[type=email] {
 .chef-name {
     margin-top: 20px;
     text-align: center;
+}
+
+/* contact page */
+
+.map {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 0px;
+    height: 600px;
+    width: 900px;
+}
+
+.map img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Contact */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 50px;
+}
+
+.contact-info {
+    width: 25%;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.info-box i {
+    font-size: 28px;
+    color: #d4a373;
+    margin-right: 15px;
+}
+
+.info-text h4 {
+    margin: 0;
+    font-weight: 400;
+    color: #222;
+}
+
+.info-text p {
+    font-weight: 300;
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.contact-form {
+    display: flex;
+    gap: 20px;
+}
+
+.form-left {
+    min-width: 325px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-left input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.form-right {
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-right textarea {
+    height: 64%;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.form-right button {
+    align-self: flex-end;
+    padding: 12px 30px;
+    border: 1px solid transparent;
+    background: #d4a373;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-right button:hover {
+    color: #d1ab7f;
+    background-color: #fff;
+    border: 1px solid #d1ab7f;
 }
