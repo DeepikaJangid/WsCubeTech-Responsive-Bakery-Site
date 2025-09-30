@@ -478,4 +478,11 @@
         gap: 25px;
     }
 
+    /* team page */
+
+    .chef {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
 }

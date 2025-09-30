@@ -188,7 +188,8 @@ nav ul li a {
 
 /* available-items */
 
-.available-items {
+.available-items,
+.chef-team {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,14 +200,16 @@ nav ul li a {
 }
 
 .available-items h1,
-.blog-container h1 {
+.blog-container h1,
+.chef-team h1 {
     color: #222;
     font-size: 2.25rem;
     font-weight: 550;
 }
 
 .available-items p,
-.blog-container p {
+.blog-container p,
+.chef-team p {
     font-weight: 400;
     color: #777;
     font-size: 0.9rem;
@@ -749,4 +752,31 @@ input[type=email] {
     font-size: 1.12rem;
     text-align: center;
     color: #d1ab7f;
+}
+
+/* team page */
+
+.chef-team {
+    padding: 60px 0px 0px;
+}
+
+.chef-team h1 {
+    text-align: center;
+}
+
+.chef-team p {
+    padding-bottom: 40px;
+}
+
+.chefs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.chef-name {
+    margin-top: 20px;
+    text-align: center;
 }
