@@ -1042,7 +1042,7 @@
         //menu tabbing system
         const menuTabs = document.querySelectorAll('.menu-tab');
 
-        const pizzaBtn = document.querySelector('.menu-tab');
+        // const pizzaBtn = document.querySelector('.menu-tab');
 
         const tabClass = document.querySelector('.tab-class');
 
@@ -1056,29 +1056,26 @@
                 tabs.addEventListener(
                     'click',
                     () => {
+                        menuTabs.forEach(
+                            (tab) =>
+                                tab.classList.remove('menuTab-active'),
+                        );
+                        tab.classList.add('menuTab-active');
+
                         if (tabs.innerText === 'Pizza') {
                             tabClass.innerHTML = pizzaMenu.innerHTML;
-                            pizzaBtn.style.color = 'white';
-                            pizzaBtn.style.background = '#d1ab7f';
-                            tabs.classList.toggle('menuTab-active');
                         }
 
                         else if (tabs.innerText === 'Bread') {
                             tabClass.innerHTML = breadMenu.innerHTML;
-                            pizzaBtn.style.color = 'black';
-                            pizzaBtn.style.background = 'white';
                         }
 
                         else if (tabs.innerText === 'Burgers') {
                             tabClass.innerHTML = burgerMenu.innerHTML;
-                            pizzaBtn.style.color = 'black';
-                            pizzaBtn.style.background = 'white';
                         }
 
                         else if (tabs.innerText === 'Pasteries') {
                             tabClass.innerHTML = pasteriesMenu.innerHTML;
-                            pizzaBtn.style.color = 'black';
-                            pizzaBtn.style.background = 'white';
                         }
                     }
                 )

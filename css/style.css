@@ -674,9 +674,11 @@ input[type=email] {
 }
 
 .menu-tab:focus,
-.menu-tab:first-child, .menuTab-active {
+.menu-tab:first-child .menuTab-active {
     color: #fff;
     background-color: #d1ab7f;
+    /* color: #000;
+    background-color: #fff; */
 }
 
 /* pizza-menu */
