@@ -66,10 +66,8 @@ nav ul li a {
 
 .banner-img {
     background: url(../images/banner-bg.jpg) center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 82px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,9 +77,9 @@ nav ul li a {
 .overlay {
     position: absolute;
     left: 0;
-    top: 0px;
+    top: 0;
     width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 82px);
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -183,7 +181,7 @@ nav ul li a {
 
 .bake-content-left .check-menu,
 .video-content-left .check-menu {
-    margin-top: 1rem ;
+    margin-top: 1rem;
 }
 
 .check-menu:hover {
