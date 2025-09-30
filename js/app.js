@@ -190,27 +190,29 @@ $('.reviews').slick({
 //         tabs.addEventListener(
 //             'click',
 //             () => {
+//                 menuTabs.forEach(
+//                     (tab) =>
+//                         tabs.classList.remove('menuTab-active'),
+//                 );
+//                 tabs.classList.add('menuTab-active');
+
 //                 if (tabs.innerText === 'Pizza') {
-//                     tabClass.innerHTML = pizzaMenu.innerHTML
+//                     tabClass.innerHTML = pizzaMenu.innerHTML;
 //                 }
 
 //                 else if (tabs.innerText === 'Bread') {
-//                     tabClass.innerHTML = breadMenu.innerHTML
+//                     tabClass.innerHTML = breadMenu.innerHTML;
 //                 }
 
 //                 else if (tabs.innerText === 'Burgers') {
-//                     tabClass.innerHTML = burgerMenu.innerHTML
+//                     tabClass.innerHTML = burgerMenu.innerHTML;
 //                 }
 
 //                 else if (tabs.innerText === 'Pasteries') {
-//                     tabClass.innerHTML = pasteriesMenu.innerHTML
+//                     tabClass.innerHTML = pasteriesMenu.innerHTML;
 //                 }
 //             }
 //         )
 //     }
 // )
-
-
-
-
 

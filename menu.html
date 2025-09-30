@@ -1058,9 +1058,9 @@
                     () => {
                         menuTabs.forEach(
                             (tab) =>
-                                tab.classList.remove('menuTab-active'),
+                                tabs.classList.remove('menuTab-active'),
                         );
-                        tab.classList.add('menuTab-active');
+                        tabs.classList.add('menuTab-active');
 
                         if (tabs.innerText === 'Pizza') {
                             tabClass.innerHTML = pizzaMenu.innerHTML;
