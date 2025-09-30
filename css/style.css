@@ -67,6 +67,7 @@ nav ul li a {
 .banner-img {
     background: url(../images/banner-bg.jpg) center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     height: calc(100vh - 82px);
     display: flex;
     align-items: center;
