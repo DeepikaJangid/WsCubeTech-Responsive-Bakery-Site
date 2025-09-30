@@ -173,3 +173,44 @@ $('.reviews').slick({
         // instead of a settings object
     ]
 });
+
+
+//menu tabbing system
+// const menuTabs = document.querySelectorAll('.menu-tab');
+
+// const tabClass = document.querySelector('.tab-class');
+
+// const pizzaMenu = document.querySelector('.pizza-menu');
+// const breadMenu = document.querySelector('.bread-menu');
+// const burgerMenu = document.querySelector('.burger-menu');
+// const pasteriesMenu = document.querySelector('.pastry-menu');
+
+// menuTabs.forEach(
+//     (tabs, index) => {
+//         tabs.addEventListener(
+//             'click',
+//             () => {
+//                 if (tabs.innerText === 'Pizza') {
+//                     tabClass.innerHTML = pizzaMenu.innerHTML
+//                 }
+
+//                 else if (tabs.innerText === 'Bread') {
+//                     tabClass.innerHTML = breadMenu.innerHTML
+//                 }
+
+//                 else if (tabs.innerText === 'Burgers') {
+//                     tabClass.innerHTML = burgerMenu.innerHTML
+//                 }
+
+//                 else if (tabs.innerText === 'Pasteries') {
+//                     tabClass.innerHTML = pasteriesMenu.innerHTML
+//                 }
+//             }
+//         )
+//     }
+// )
+
+
+
+
+
