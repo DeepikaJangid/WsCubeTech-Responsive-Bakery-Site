@@ -40,7 +40,7 @@ const menuBox = document.querySelectorAll('.available-items-img');
 const sliderBox = document.querySelector('.available-slider-img');
 
 let count = 0;
-slideRight.addEventListener(
+slideRight && slideRight.addEventListener( //iska mtlab agar sliderRight hai to hi yeh function run kro warna nahi
     'click',
     () => {
         menuBox.forEach(
@@ -60,7 +60,7 @@ slideRight.addEventListener(
 )
 
 // left slide
-slideLeft.addEventListener(
+slideLeft && slideLeft.addEventListener(
     'click',
     () => {
         menuBox.forEach(
@@ -176,43 +176,44 @@ $('.reviews').slick({
 
 
 //menu tabbing system
-// const menuTabs = document.querySelectorAll('.menu-tab');
+const menuTabs = document.querySelectorAll('.menu-tab');
 
-// const tabClass = document.querySelector('.tab-class');
+// const pizzaBtn = document.querySelector('.menu-tab');
 
-// const pizzaMenu = document.querySelector('.pizza-menu');
-// const breadMenu = document.querySelector('.bread-menu');
-// const burgerMenu = document.querySelector('.burger-menu');
-// const pasteriesMenu = document.querySelector('.pastry-menu');
+const tabClass = document.querySelector('.tab-class');
 
-// menuTabs.forEach(
-//     (tabs, index) => {
-//         tabs.addEventListener(
-//             'click',
-//             () => {
-//                 menuTabs.forEach(
-//                     (tab) =>
-//                         tabs.classList.remove('menuTab-active'),
-//                 );
-//                 tabs.classList.add('menuTab-active');
+const pizzaMenu = document.querySelector('.pizza-menu');
+const breadMenu = document.querySelector('.bread-menu');
+const burgerMenu = document.querySelector('.burger-menu');
+const pasteriesMenu = document.querySelector('.pastry-menu');
 
-//                 if (tabs.innerText === 'Pizza') {
-//                     tabClass.innerHTML = pizzaMenu.innerHTML;
-//                 }
+menuTabs.forEach(
+    (tabs, index) => {
+        tabs.addEventListener(
+            'click',
+            () => {
+                // menuTabs.forEach(
+                //     (tab) =>
+                //         tabs.classList.remove('menuTab-active'),
+                // );
+                // tabs.classList.add('menuTab-active');
 
-//                 else if (tabs.innerText === 'Bread') {
-//                     tabClass.innerHTML = breadMenu.innerHTML;
-//                 }
+                if (tabs.innerText === 'Pizza') {
+                    tabClass.innerHTML = pizzaMenu.innerHTML;
+                }
 
-//                 else if (tabs.innerText === 'Burgers') {
-//                     tabClass.innerHTML = burgerMenu.innerHTML;
-//                 }
+                else if (tabs.innerText === 'Bread') {
+                    tabClass.innerHTML = breadMenu.innerHTML;
+                }
 
-//                 else if (tabs.innerText === 'Pasteries') {
-//                     tabClass.innerHTML = pasteriesMenu.innerHTML;
-//                 }
-//             }
-//         )
-//     }
-// )
+                else if (tabs.innerText === 'Burgers') {
+                    tabClass.innerHTML = burgerMenu.innerHTML;
+                }
 
+                else if (tabs.innerText === 'Pasteries') {
+                    tabClass.innerHTML = pasteriesMenu.innerHTML;
+                }
+            }
+        )
+    }
+)
